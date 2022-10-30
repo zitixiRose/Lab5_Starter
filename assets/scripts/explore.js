@@ -44,7 +44,9 @@ talk.addEventListener('click', (event) => {
 
   synth.speak(utterThis);
 
-  
+  utterThis.addEventListener('end', (event) => {
+    face.src = "assets/images/smiling.png";
+  });
   //face.src = "assets/images/no-image.png";
   
   //face.src = "assets/images/smiling-open.png";
