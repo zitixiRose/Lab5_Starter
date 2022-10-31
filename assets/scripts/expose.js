@@ -14,7 +14,7 @@ let control = document.getElementById("volume-controls");
 let pic2 = control.querySelector('img');
 //let pic2 = document.querySelectorAll('img:last');
 
-musicType.addEventListener('click', (event) => {
+musicType.addEventListener('change', (event) => {
   if(musicType.value=="air-horn") {
     music.src="assets/audio/air-horn.mp3";
     picture.src="assets/images/air-horn.svg";
